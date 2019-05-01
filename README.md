@@ -15,6 +15,7 @@
 
 <a name="getting-started"></a>
 ## Getting Started
+
 In your terminal, create a project using Vue CLI 3. If you don't have it in your machine, go [here](https://cli.vuejs.org/guide/installation.html).
 ```
 vue create <your-project-name>
@@ -37,6 +38,7 @@ npm run serve
 
 <a name="prerequisites"></a>
 ## Prerequisites
+
 To use Firestore database, you need to install the Firebase module.
 ```
 npm i firebase
@@ -48,6 +50,7 @@ npm i bootstrap-vue
 
 <a name="firestore-database"></a>
 ## Firestore Database
+
 Follow these steps to setup your Firestore database:
 1. Sign in to [Google Firebase Console](https://console.firebase.google.com) using your Google account.
 2. Click **Add Project**, name it as `<your-project-name>`, click **Create Project** then click **Continue**.
@@ -77,6 +80,7 @@ export default firebase;
 
 <a name="bootstrap-vue"></a>
 ## Bootstrap-Vue
+
 Create a file called **bootstrap.js** under `/src` folder and add these codes:
 ```js
 import Vue from "vue";
@@ -94,6 +98,7 @@ import "./bootstrap";
 
 <a name="router"></a>
 ## Router
+
 Open **router.js** and replace all with these codes:
 ```js
 import Vue from "vue";
@@ -136,6 +141,7 @@ export default new VueRouter({
 
 <a name="views"></a>
 ## Views
+
 Create a file called **boards.vue** under `/src/views` folder and add these codes:
 ```vue
 <template>
@@ -464,10 +470,12 @@ Open **app.vue** and replace the `<template>` with these codes:
 
 <a name="repository"></a>
 ## Repository
+
 [Create a new repository in GitHub](https://github.com/new) then add your project.
 
 <a name="deployment"></a>
 ## Deployment
+
 Create a new branch called **gh-pages**.
 ```
 git checkout -b gh-pages
@@ -520,10 +528,13 @@ In your repository settings under **GitHub Pages**, select **gh-pages** branch a
 
 <a name="references"></a>
 ## References
+
 - [vuejs firebase tutorial build firestore crud web application](https://www.djamware.com/post/5bc9313680aca7466989441e/vuejs-firebase-tutorial-build-firestore-crud-web-application#ch1)
 - [lazy loading vue cli 3 webpack](https://alligator.io/vuejs/lazy-loading-vue-cli-3-webpack/)
 - [vuejs deployment guide](https://cli.vuejs.org/guide/deployment.html#cors)
 
 <a name="license"></a>
 ## License
-MIT © Jolo Yonaha
+
+© 2019 [Jolo Yonaha](https://github.com/joloyonaha)  
+[MIT License](https://github.com/joloyonaha/vuejs-with-firestore/blob/master/LICENSE)
