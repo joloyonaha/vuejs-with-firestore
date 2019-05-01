@@ -1,4 +1,4 @@
-<h1 align="center"> Vue.js with Firestore Sample</h1>
+<h1 align="center"> Vue.js with Firestore</h1>
 <p align="center">This is a step by step tutorial for building a web application using Vue.js 2 and Firestore database.</p>
 
 ## Table of Contents
