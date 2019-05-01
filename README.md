@@ -1,5 +1,5 @@
-# Vue.js with Firestore Sample
-This is a step by step tutorial for building a web application using Vue.js 2 and Firestore database.
+<h1 align="center"> Vue.js with Firestore Sample</h1>
+<p align="center">This is a step by step tutorial for building a web application using Vue.js 2 and Firestore database.</p>
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -516,7 +516,7 @@ In your terminal, run the **deploy.sh**.
 bash deploy.sh
 ```
 
-In your repository settings under **GitHub Pages**, select **gh-pages branch** as your **Source**.
+In your repository settings under **GitHub Pages**, select **gh-pages** branch as your **Source**.
 
 <a name="references"></a>
 ## References
