@@ -1,4 +1,4 @@
-## Vue.js with Firestore Sample
+# Vue.js with Firestore Sample
 This is a step by step tutorial for building a web application using Vue.js 2 and Firestore database.
 
 ## Table of Contents
@@ -50,17 +50,17 @@ npm i bootstrap-vue
 ## Firestore Database
 Follow these steps to setup your Firestore database:
 1. Sign in to [Google Firebase Console](https://console.firebase.google.com) using your Google account.
-2. Click **Add Project**, name it as <your-project-name>, click **Create Project** then click **Continue**.
+2. Click **Add Project**, name it as `<your-project-name>`, click **Create Project** then click **Continue**.
 3. After being redirected to the Project Overview page, click **Database** then click **Create Database**.
 4. For Security Rules for Cloud Firestore, choose **Start in test mode** then click **Enable**.
-5. Click **Add Collection**, use **'boards'** for the Collection ID, use **Auto-ID** for the Document ID then add **'title'**, **'description'** and **'author'** fields.
+5. Click **Add Collection**, use **boards** for the Collection ID, use **Auto-ID** for the Document ID then add **title**, **description** and **author** fields.
 
 Follow these steps to connect your Firestore database to your web application.
 1. In Project Overview page, click **</>** in the hero section.
 2. Copy the `var config = {...}`.
 3. Go to your project, create a file called **firebase.js** under `/src` folder.
-4. Add these codes to the newly created firebase.js.
-```
+4. Add these codes to the newly created **firebase.js**.
+```js
 import firebase from "firebase/app";
 import "firebase/firestore";
 
@@ -78,7 +78,7 @@ export default firebase;
 <a name="bootstrap-vue"></a>
 ## Bootstrap-Vue
 Create a file called **bootstrap.js** under `/src` folder and add these codes:
-```
+```js
 import Vue from "vue";
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
@@ -88,14 +88,14 @@ Vue.use(BootstrapVue);
 ```
 
 Open **main.js** and add this code:
-```
+```js
 import "./bootstrap";
 ```
 
 <a name="router"></a>
 ## Router
 Open **router.js** and replace all with these codes:
-```
+```js
 import Vue from "vue";
 import VueRouter from "vue-router";
 
@@ -137,7 +137,7 @@ export default new VueRouter({
 <a name="views"></a>
 ## Views
 Create a file called **boards.vue** under `/src/views` folder and add these codes:
-```
+```vue
 <template>
   <b-row>
     <b-col cols="12">
@@ -199,7 +199,7 @@ export default {
 ```
 
 Create a file called **show-board.vue** under `/src/views` folder and add these codes:
-```
+```vue
 <template>
   <b-row>
     <b-col cols="12">
@@ -278,7 +278,7 @@ export default {
 ```
 
 Create a file called **add-board.vue** under `/src/views` folder and add these codes:
-```
+```vue
 <template>
   <b-row>
     <b-col cols="12">
@@ -359,7 +359,7 @@ export default {
 ```
 
 Create a file called **edit-board.vue** under `/src/views` folder and add these codes:
-```
+```vue
 <template>
   <b-row>
     <b-col cols="12">
@@ -450,7 +450,7 @@ export default {
 ```
 
 Open **app.vue** and replace the `<template>` with these codes:
-```
+```vue
 <template>
   <div id="app">
     <div id="nav">
@@ -474,7 +474,7 @@ git checkout -b gh-pages
 ```
 
 Create a file called **vue.config.js** and add these codes:
-```
+```js
 module.exports = {
   baseUrl: process.env.NODE_ENV === "production"
     ? "/<your-project-name>/"
@@ -483,7 +483,7 @@ module.exports = {
 ```
 
 Create a file called deploy.sh and add these codes:
-```
+```sh
 #!/usr/bin/env sh
 
 # abort on errors
@@ -520,9 +520,9 @@ In your repository settings under **GitHub Pages**, select **gh-pages branch** a
 
 <a name="references"></a>
 ## References
-- https://www.djamware.com/post/5bc9313680aca7466989441e/vuejs-firebase-tutorial-build-firestore-crud-web-application#ch1
-- https://alligator.io/vuejs/lazy-loading-vue-cli-3-webpack/
-- https://cli.vuejs.org/guide/deployment.html#cors
+- [vuejs firebase tutorial build firestore crud web application](https://www.djamware.com/post/5bc9313680aca7466989441e/vuejs-firebase-tutorial-build-firestore-crud-web-application#ch1)
+- [lazy loading vue cli 3 webpack](https://alligator.io/vuejs/lazy-loading-vue-cli-3-webpack/)
+- [vuejs deployment guide](https://cli.vuejs.org/guide/deployment.html#cors)
 
 <a name="license"></a>
 ## License
